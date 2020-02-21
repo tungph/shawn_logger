@@ -1,8 +1,1 @@
-import logging
-
-from .podder_task_logger import PodderTaskLogger
-from .podder_task_logger import task_name, job_id, host_name
-
-logging.setLoggerClass(PodderTaskLogger)
-
-logging.getLogger().__class__ = PodderTaskLogger
+from .podder_task_logger import set_job_id, set_host_name, set_task_name

@@ -2,8 +2,8 @@ import logging
 
 import shawn_logger
 
-shawn_logger.job_id = 'SHAWN_TASK_ID'
-shawn_logger.task_name = 'SHAWN_TASK_NAME'
+shawn_logger.set_job_id('testjobid')
+shawn_logger.set_task_name('testtaskname')
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(format='', level=logging.DEBUG)
